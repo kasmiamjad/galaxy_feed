@@ -66,7 +66,7 @@ class ApiController extends Controller
         <ReplenishmentTimeSeries type="custom" customType="SupplierQualityInspectionstock">
         <TimeSeriesDetails>
         <Period startDate="2024-07-24T14:01:00-5:00" endDate="2024-07-24T14:01:00-5:00"/>
-        <TimeSeriesQuantity quantity="699.000">
+        <TimeSeriesQuantity quantity="222.000">
         <UnitOfMeasure>PL</UnitOfMeasure>
         </TimeSeriesQuantity>
         </TimeSeriesDetails>
@@ -74,7 +74,7 @@ class ApiController extends Controller
         <ReplenishmentTimeSeries type="custom" customType="SupplierOnHandStock">
         <TimeSeriesDetails>
         <Period startDate="2024-07-24T14:01:00-5:00" endDate="2024-07-24T14:01:00-5:00"/>
-        <TimeSeriesQuantity quantity="699.053">
+        <TimeSeriesQuantity quantity="222.053">
         <UnitOfMeasure>PL</UnitOfMeasure>
         </TimeSeriesQuantity>
         </TimeSeriesDetails>
@@ -82,7 +82,7 @@ class ApiController extends Controller
         <ReplenishmentTimeSeries type="custom" customType="SupplierOpenPOs">
         <TimeSeriesDetails>
         <Period startDate="2024-07-24T14:01:00-5:00" endDate="2024-07-24T14:01:00-5:00"/>
-        <TimeSeriesQuantity quantity="699.333">
+        <TimeSeriesQuantity quantity="222.333">
         <UnitOfMeasure>PL</UnitOfMeasure>
         </TimeSeriesQuantity>
         </TimeSeriesDetails>
@@ -90,7 +90,7 @@ class ApiController extends Controller
         <ReplenishmentTimeSeries type="custom" customType="SupplierOnHandunderManufacturing">
         <TimeSeriesDetails>
         <Period startDate="2024-07-24T14:01:00-5:00" endDate="2024-07-24T14:01:00-5:00"/>
-        <TimeSeriesQuantity quantity="699.000">
+        <TimeSeriesQuantity quantity="222.000">
         <UnitOfMeasure>PL</UnitOfMeasure>
         </TimeSeriesQuantity>
         </TimeSeriesDetails>
@@ -98,7 +98,7 @@ class ApiController extends Controller
         <ReplenishmentTimeSeries type="custom" customType="SupplierTotalonHandStock">
         <TimeSeriesDetails>
         <Period startDate="2024-07-24T14:01:00-5:00" endDate="2024-07-24T14:01:00-5:00"/>
-        <TimeSeriesQuantity quantity="699.053">
+        <TimeSeriesQuantity quantity="222.053">
         <UnitOfMeasure>PL</UnitOfMeasure>
         </TimeSeriesQuantity>
         </TimeSeriesDetails>
@@ -106,7 +106,7 @@ class ApiController extends Controller
         <ReplenishmentTimeSeries type="custom" customType="SupplierRMOnHandOnOrderETA">
         <TimeSeriesDetails>
         <Period startDate="2024-07-24T14:01:00-5:00" endDate="2024-07-24T14:01:00-5:00"/>
-        <TimeSeriesQuantity quantity="699.000">
+        <TimeSeriesQuantity quantity="222.000">
         <UnitOfMeasure>PL</UnitOfMeasure>
         </TimeSeriesQuantity>
         </TimeSeriesDetails>
@@ -192,7 +192,7 @@ class ApiController extends Controller
         </cXML>');
         curl_setopt($ch, CURLOPT_HTTPHEADER, [
             'Content-Type: application/xml',
-            'Authorization: Bearer eyJhbGciOiJSUzI1NiIsIng1dSI6Imh0dHBzOi8vb2F1dGhhc3NlcnZpY2VzLnNhMS5oYW5hLm9uZGVtYW5kLmNvbS9vYXV0aDIvYXBpL3YxL2p3dC9jZXJ0aWZpY2F0ZSIsInR5cCI6IkpXVCIsImtpZCI6IjIifQ.eyJpc3MiOiJodHRwczovL29hdXRoYXNzZXJ2aWNlcy5zYTEuaGFuYS5vbmRlbWFuZC5jb20iLCJzdWIiOnsibmFtZSI6IlAyMDA4NTAxNTQyIiwiaWRwTmFtZSI6Imh0dHBzOi8vYWNjb3VudHMuc2FwLmNvbSIsImNvbnRleHQiOnsiYXR0cmlidXRlcyI6eyJncmFudF90eXBlIjoicGFzc3dvcmQiLCJ0b2tlblZhbGlkaXR5IjoiNDMyMDAwMDAiLCJ0ZW5hbnQiOiI2OTA5ZWFmMi1hYmJlLTQ5MDgtYWY2YS1iOGE0M2FmNWEwZmIifSwibXVsdGlWYWx1ZUF0dHJpYnV0ZXMiOnsiYXVkaWVuY2UiOlsiaHR0cHM6Ly9hY2NvdW50cy5zYXAuY29tIiwiNjkwOWVhZjItYWJiZS00OTA4LWFmNmEtYjhhNDNhZjVhMGZiX2h0dHBzOi8vYWNjb3VudHMuc2FwLmNvbSJdfX0sImF0dHJpYnV0ZXMiOlt7Im5hbWVzcGFjZSI6ImNvbS5zYXAuc2VjdXJpdHkuc2FtbDIiLCJuYW1lIjoibGFzdG5hbWUiLCJ2YWx1ZXMiOlsiQWxvZ2FpbCJdfSx7Im5hbWVzcGFjZSI6ImNvbS5zYXAuc2VjdXJpdHkuc2FtbDIiLCJuYW1lIjoibmFtZV9pZCIsInZhbHVlcyI6WyJ1aWQiXX0seyJuYW1lc3BhY2UiOiJjb20uc2FwLnNlY3VyaXR5LnNhbWwyIiwibmFtZSI6ImVtYWlsIiwidmFsdWVzIjpbIm11bmRlckBnYWxheHlzYS5uZXQiXX0seyJuYW1lc3BhY2UiOiJjb20uc2FwLnNlY3VyaXR5LnNhbWwyIiwibmFtZSI6ImZpcnN0bmFtZSIsInZhbHVlcyI6WyJNdW5kZXIiXX0seyJuYW1lc3BhY2UiOiJjb20uc2FwLnNlY3VyaXR5LnNhbWwyIiwibmFtZSI6Im5hbWUiLCJ2YWx1ZXMiOlsiUDIwMDg1MDE1NDIiXX0seyJuYW1lc3BhY2UiOiJjb20uc2FwLnNlY3VyaXR5LnNhbWwyIiwibmFtZSI6InR5cGUiLCJ2YWx1ZXMiOlsicHVibGljIl19XX0sImF1ZCI6WyJodHRwczovL2FjY291bnRzLnNhcC5jb20iLCI2OTA5ZWFmMi1hYmJlLTQ5MDgtYWY2YS1iOGE0M2FmNWEwZmJfaHR0cHM6Ly9hY2NvdW50cy5zYXAuY29tIl0sImV4cCI6MTcyNDE4NTAwMTU5NiwiaWF0IjoxNzI0MTQxODAxNTk2LCJuYmYiOjE3MjQxNDE4MDE1OTYsImp0aSI6IjQzZGQ0NmU0LWEzNjctNDc5OS1iZWVkLThlYjdkNTc3OWQyZiJ9.Z0RpUwjYQu2bblF1ihj6WLgpSF96A49oAiHUHfBdDb20Al9KgvOo6EVi7vNG07fGuRrsW56CPrbhSF3ZbSR+IT2revEZ3idhqG7O1PluJOu5s7z7QBBBEZLVsYbDFGW3f9fjWSXuB/GWV01LKsv/qJDq2g7diV+tL247k6fSZdRlZxJ4Zg8T4ya6FUqd1bUpQeRd580Fg1mJgu+kxRUsJrCuB3DEXcXTBa7+qMmcaen2NpVppqKeko48eR1f8C9s7m8p00giLuVJGYFPa0dTGqYWnh0qhVnfrgU2hiQ2ABqfFnjBfL0fGfvZAX4yj/VM/Q/9Wwyt8ixD/4h6V/8zbZE6TNy45Cmya31AtFVPzZyT1k8yZv8uNXuJSO8FPnQ46pHig3dRT69LJW3OiEtdEtiYHGzlywuA2mmRy3DpeCaAyV10FrqcrFPIdT6H1eiVCh2kLQwHD+ye5L1AhnDgaaePg/4b9LSJvNNyrZUgqDn/spKn1Ayhlbv04l91VeLoahP7AUm3SpyNd4TX7Uq/jUXRRM6n+3394hzMhuz7lQznShW7nIUIV2VWyZokRzsH5nnRfPh29QdFXU9CpV0POgZppL8qS/ZbqJa2uw7oI+d7ifXdfQNu0/km0SNzgJAmdhCpMkYNFxIXuslE1VKPyv2YBVmFx9Mcx2bAoYQSnfE'
+            'Authorization: Bearer eyJhbGciOiJSUzI1NiIsIng1dSI6Imh0dHBzOi8vb2F1dGhhc3NlcnZpY2VzLnNhMS5oYW5hLm9uZGVtYW5kLmNvbS9vYXV0aDIvYXBpL3YxL2p3dC9jZXJ0aWZpY2F0ZSIsInR5cCI6IkpXVCIsImtpZCI6IjIifQ.eyJpc3MiOiJodHRwczovL29hdXRoYXNzZXJ2aWNlcy5zYTEuaGFuYS5vbmRlbWFuZC5jb20iLCJzdWIiOnsibmFtZSI6IlAyMDA4NTAxNTQyIiwiaWRwTmFtZSI6Imh0dHBzOi8vYWNjb3VudHMuc2FwLmNvbSIsImNvbnRleHQiOnsiYXR0cmlidXRlcyI6eyJncmFudF90eXBlIjoicGFzc3dvcmQiLCJ0b2tlblZhbGlkaXR5IjoiNDMyMDAwMDAiLCJ0ZW5hbnQiOiI2OTA5ZWFmMi1hYmJlLTQ5MDgtYWY2YS1iOGE0M2FmNWEwZmIifSwibXVsdGlWYWx1ZUF0dHJpYnV0ZXMiOnsiYXVkaWVuY2UiOlsiaHR0cHM6Ly9hY2NvdW50cy5zYXAuY29tIiwiNjkwOWVhZjItYWJiZS00OTA4LWFmNmEtYjhhNDNhZjVhMGZiX2h0dHBzOi8vYWNjb3VudHMuc2FwLmNvbSJdfX0sImF0dHJpYnV0ZXMiOlt7Im5hbWVzcGFjZSI6ImNvbS5zYXAuc2VjdXJpdHkuc2FtbDIiLCJuYW1lIjoibGFzdG5hbWUiLCJ2YWx1ZXMiOlsiQWxvZ2FpbCJdfSx7Im5hbWVzcGFjZSI6ImNvbS5zYXAuc2VjdXJpdHkuc2FtbDIiLCJuYW1lIjoibmFtZV9pZCIsInZhbHVlcyI6WyJ1aWQiXX0seyJuYW1lc3BhY2UiOiJjb20uc2FwLnNlY3VyaXR5LnNhbWwyIiwibmFtZSI6ImVtYWlsIiwidmFsdWVzIjpbIm11bmRlckBnYWxheHlzYS5uZXQiXX0seyJuYW1lc3BhY2UiOiJjb20uc2FwLnNlY3VyaXR5LnNhbWwyIiwibmFtZSI6ImZpcnN0bmFtZSIsInZhbHVlcyI6WyJNdW5kZXIiXX0seyJuYW1lc3BhY2UiOiJjb20uc2FwLnNlY3VyaXR5LnNhbWwyIiwibmFtZSI6Im5hbWUiLCJ2YWx1ZXMiOlsiUDIwMDg1MDE1NDIiXX0seyJuYW1lc3BhY2UiOiJjb20uc2FwLnNlY3VyaXR5LnNhbWwyIiwibmFtZSI6InR5cGUiLCJ2YWx1ZXMiOlsicHVibGljIl19XX0sImF1ZCI6WyJodHRwczovL2FjY291bnRzLnNhcC5jb20iLCI2OTA5ZWFmMi1hYmJlLTQ5MDgtYWY2YS1iOGE0M2FmNWEwZmJfaHR0cHM6Ly9hY2NvdW50cy5zYXAuY29tIl0sImV4cCI6MTcyNDI2NDMzMDE0MCwiaWF0IjoxNzI0MjIxMTMwMTQwLCJuYmYiOjE3MjQyMjExMzAxNDAsImp0aSI6IjQwNWJjNmM0LTgyYmQtNGNiYS05YzA3LTY2OGE4Nzg5NGMzMCJ9.exW66N/VeN5HsdG2y3keTmfHjMcTHG3IYVfywHpzhWcwE9xfiULDYA6GVF1mSWIFYBlJYOnWpCaS0ROPCOikUkDjJyNV9zdUVwT4cvTW7L961sNcOa3EmlO9KGPXxPYcQLmgB8KBlG2ADwe6hFR36BDTnUoBGWb1VFZnlPJXvdJmJccjwdGPmQrQb8NryqBB/r4Cwhq7PfbXF9BduhbJRDf7mgNLXYb1pJiFLFVMNlFBATNZTOpYQ0oVGPrXHltnS0gRowUg/vPMGNF6ZM5L4JYRRsMLi1deP5NQTZCyJlofmpthTLPtQz4F+OQ9/ep0L/xK3atS7iMND7PCIBEjIgHiEdqplmadhTsUQ7kDyr+GQ0vqnMlYW5uLMwkwm0B5GmhKFfVplLbCzkMG3A3OhAJlUEJpu8JPt8EipWEp7jqM3uuhiXctI6Bp+ugJWz+jd04rTAkVbl2zLP8+uWm5pkmgFsNfmjj0316OxHpK27EiBs0GZa1Xt9U36Rtesp939q7fUbnCgt28Y+eUPIQiKdLPDB21Pt5BUa1QqrC6b52GfjLhJQDCMWEUgnRN1HAApFU8AdsxPHTNiM+uV+aJAp00HYRAo7BNLruGrHdK9IsC5TIwDg2MvoLHch4FFwAodWQe27OigmaoEnjk9T0/SvsDXXLox7AzVpUEYNWKOFY'
         ]);
 
         // Execute cURL request
@@ -210,7 +210,7 @@ class ApiController extends Controller
         curl_close($ch);
         //dd($response);
         // Return the response
-        //return response()->json(['response' => $response]);
-        return view('response-view', ['message' => $response]);
+        return response()->json(['response' => $response]);
+        //return view('response-view', ['message' => $response]);
     }
 }
